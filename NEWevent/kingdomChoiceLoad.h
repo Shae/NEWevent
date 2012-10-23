@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  kingdomChoiceLoad.h
 //  NEWevent
 //
 //  Created by Shae Klusman on 10/22/12.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface kingdomChoiceLoad : UIViewController
 
 @end

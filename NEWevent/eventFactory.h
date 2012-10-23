@@ -1,14 +1,13 @@
 //
-//  FirstViewController.h
+//  eventFactory.h
 //  NEWevent
 //
 //  Created by Shae Klusman on 10/22/12.
 //  Copyright (c) 2012 Shae Klusman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface FirstViewController : UIViewController
-
+@interface eventFactory : NSObject
 
 @end

@@ -24,6 +24,13 @@
 		BFC0FD0A163653F300ACDE77 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFC0FD09163653F300ACDE77 /* second@2x.png */; };
 		BFC0FD0D163653F400ACDE77 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */; };
 		BFC0FD10163653F400ACDE77 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC0FD0E163653F400ACDE77 /* SecondViewController.xib */; };
+		BFC0FD171636548000ACDE77 /* SCA-LRG-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = BFC0FD161636548000ACDE77 /* SCA-LRG-Image.png */; };
+		BFC0FD2A16365B6100ACDE77 /* eventClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD2916365B6100ACDE77 /* eventClass.m */; };
+		BFC0FD3216365FA600ACDE77 /* eventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD3116365FA600ACDE77 /* eventFactory.m */; };
+		BFC0FD381636640700ACDE77 /* normEventLVL.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD371636640700ACDE77 /* normEventLVL.m */; };
+		BFC0FD3B163664B300ACDE77 /* kingEventLVL.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD3A163664B300ACDE77 /* kingEventLVL.m */; };
+		BFC0FD5616366AA100ACDE77 /* kingdomChoiceLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */; };
+		BFC0FD5716366AA100ACDE77 /* kingdomChoiceLoad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,31 @@
 		BFC0FD09163653F300ACDE77 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BFC0FD0C163653F400ACDE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		BFC0FD0F163653F400ACDE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		BFC0FD161636548000ACDE77 /* SCA-LRG-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SCA-LRG-Image.png"; sourceTree = "<group>"; };
+		BFC0FD2816365B6100ACDE77 /* eventClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eventClass.h; path = ../eventClass.h; sourceTree = "<group>"; };
+		BFC0FD2916365B6100ACDE77 /* eventClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = eventClass.m; path = ../eventClass.m; sourceTree = "<group>"; };
+		BFC0FD3016365FA600ACDE77 /* eventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventFactory.h; sourceTree = "<group>"; };
+		BFC0FD3116365FA600ACDE77 /* eventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventFactory.m; sourceTree = "<group>"; };
+		BFC0FD361636640700ACDE77 /* normEventLVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normEventLVL.h; sourceTree = "<group>"; };
+		BFC0FD371636640700ACDE77 /* normEventLVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = normEventLVL.m; sourceTree = "<group>"; };
+		BFC0FD39163664B300ACDE77 /* kingEventLVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kingEventLVL.h; sourceTree = "<group>"; };
+		BFC0FD3A163664B300ACDE77 /* kingEventLVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kingEventLVL.m; sourceTree = "<group>"; };
+		BFC0FD3E1636666500ACDE77 /* JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		BFC0FD3F1636666500ACDE77 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		BFC0FD401636666500ACDE77 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		BFC0FD411636666500ACDE77 /* NSString+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		BFC0FD421636666500ACDE77 /* NSString+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		BFC0FD431636666500ACDE77 /* SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		BFC0FD441636666500ACDE77 /* SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		BFC0FD451636666500ACDE77 /* SBJsonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		BFC0FD461636666500ACDE77 /* SBJsonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		BFC0FD471636666500ACDE77 /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		BFC0FD481636666500ACDE77 /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		BFC0FD491636666500ACDE77 /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		BFC0FD4A1636666500ACDE77 /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		BFC0FD5316366AA100ACDE77 /* kingdomChoiceLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kingdomChoiceLoad.h; sourceTree = "<group>"; };
+		BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kingdomChoiceLoad.m; sourceTree = "<group>"; };
+		BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = kingdomChoiceLoad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,19 +128,21 @@
 		BFC0FCEB163653F300ACDE77 /* NEWevent */ = {
 			isa = PBXGroup;
 			children = (
+				BFC0FD5816366BC100ACDE77 /* Images */,
+				BFC0FD3D1636664B00ACDE77 /* SBJSON */,
+				BFC0FD3C1636650400ACDE77 /* classes */,
 				BFC0FCF4163653F300ACDE77 /* AppDelegate.h */,
 				BFC0FCF5163653F300ACDE77 /* AppDelegate.m */,
 				BFC0FCFD163653F300ACDE77 /* FirstViewController.h */,
 				BFC0FCFE163653F300ACDE77 /* FirstViewController.m */,
-				BFC0FD00163653F300ACDE77 /* first.png */,
-				BFC0FD02163653F300ACDE77 /* first@2x.png */,
+				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
 				BFC0FD04163653F300ACDE77 /* SecondViewController.h */,
 				BFC0FD05163653F300ACDE77 /* SecondViewController.m */,
-				BFC0FD07163653F300ACDE77 /* second.png */,
-				BFC0FD09163653F300ACDE77 /* second@2x.png */,
-				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
 				BFC0FD0E163653F400ACDE77 /* SecondViewController.xib */,
 				BFC0FCEC163653F300ACDE77 /* Supporting Files */,
+				BFC0FD5316366AA100ACDE77 /* kingdomChoiceLoad.h */,
+				BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */,
+				BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */,
 			);
 			path = NEWevent;
 			sourceTree = "<group>";
@@ -125,6 +159,53 @@
 				BFC0FCFB163653F300ACDE77 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFC0FD3C1636650400ACDE77 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0FD2816365B6100ACDE77 /* eventClass.h */,
+				BFC0FD2916365B6100ACDE77 /* eventClass.m */,
+				BFC0FD3016365FA600ACDE77 /* eventFactory.h */,
+				BFC0FD3116365FA600ACDE77 /* eventFactory.m */,
+				BFC0FD361636640700ACDE77 /* normEventLVL.h */,
+				BFC0FD371636640700ACDE77 /* normEventLVL.m */,
+				BFC0FD39163664B300ACDE77 /* kingEventLVL.h */,
+				BFC0FD3A163664B300ACDE77 /* kingEventLVL.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		BFC0FD3D1636664B00ACDE77 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0FD3E1636666500ACDE77 /* JSON.h */,
+				BFC0FD3F1636666500ACDE77 /* NSObject+SBJSON.h */,
+				BFC0FD401636666500ACDE77 /* NSObject+SBJSON.m */,
+				BFC0FD411636666500ACDE77 /* NSString+SBJSON.h */,
+				BFC0FD421636666500ACDE77 /* NSString+SBJSON.m */,
+				BFC0FD431636666500ACDE77 /* SBJSON.h */,
+				BFC0FD441636666500ACDE77 /* SBJSON.m */,
+				BFC0FD451636666500ACDE77 /* SBJsonBase.h */,
+				BFC0FD461636666500ACDE77 /* SBJsonBase.m */,
+				BFC0FD471636666500ACDE77 /* SBJsonParser.h */,
+				BFC0FD481636666500ACDE77 /* SBJsonParser.m */,
+				BFC0FD491636666500ACDE77 /* SBJsonWriter.h */,
+				BFC0FD4A1636666500ACDE77 /* SBJsonWriter.m */,
+			);
+			name = SBJSON;
+			sourceTree = "<group>";
+		};
+		BFC0FD5816366BC100ACDE77 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0FD07163653F300ACDE77 /* second.png */,
+				BFC0FD09163653F300ACDE77 /* second@2x.png */,
+				BFC0FD161636548000ACDE77 /* SCA-LRG-Image.png */,
+				BFC0FD00163653F300ACDE77 /* first.png */,
+				BFC0FD02163653F300ACDE77 /* first@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +269,8 @@
 				BFC0FD0A163653F300ACDE77 /* second@2x.png in Resources */,
 				BFC0FD0D163653F400ACDE77 /* FirstViewController.xib in Resources */,
 				BFC0FD10163653F400ACDE77 /* SecondViewController.xib in Resources */,
+				BFC0FD171636548000ACDE77 /* SCA-LRG-Image.png in Resources */,
+				BFC0FD5716366AA100ACDE77 /* kingdomChoiceLoad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +285,11 @@
 				BFC0FCF6163653F300ACDE77 /* AppDelegate.m in Sources */,
 				BFC0FCFF163653F300ACDE77 /* FirstViewController.m in Sources */,
 				BFC0FD06163653F300ACDE77 /* SecondViewController.m in Sources */,
+				BFC0FD2A16365B6100ACDE77 /* eventClass.m in Sources */,
+				BFC0FD3216365FA600ACDE77 /* eventFactory.m in Sources */,
+				BFC0FD381636640700ACDE77 /* normEventLVL.m in Sources */,
+				BFC0FD3B163664B300ACDE77 /* kingEventLVL.m in Sources */,
+				BFC0FD5616366AA100ACDE77 /* kingdomChoiceLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +413,7 @@
 				BFC0FD15163653F400ACDE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
