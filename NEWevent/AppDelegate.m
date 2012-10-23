@@ -9,19 +9,30 @@
 #import "AppDelegate.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "OpeningOptions.h"
 
 @implementation AppDelegate
+@synthesize defaultKingdom;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //defaultKingdom = @"test";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[OpeningOptions alloc] initWithNibName:@"OpeningOptions" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    
+   /*
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
+   //viewController0.hidesBottomBarWhenPushed = YES;
     self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
+    
+    [self.window makeKeyAndVisible];*/
     return YES;
 }
 

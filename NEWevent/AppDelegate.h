@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
-
+{
+    __weak NSString *defaultKingdom;
+}
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UIViewController *viewController;
 @property (strong, nonatomic) UITabBarController *tabBarController;
-
+@property (weak, nonatomic) NSString *defaultKingdom;
 @end

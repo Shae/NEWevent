@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA5AC44163676A100D33AA1 /* OpeningOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC42163676A100D33AA1 /* OpeningOptions.m */; };
+		BFA5AC45163676A100D33AA1 /* OpeningOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC43163676A100D33AA1 /* OpeningOptions.xib */; };
+		BFA5AC7C1636871000D33AA1 /* KingdomList.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC7A1636871000D33AA1 /* KingdomList.m */; };
+		BFA5AC7D1636871000D33AA1 /* KingdomList.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7B1636871000D33AA1 /* KingdomList.xib */; };
+		BFA5AC7F16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */; };
+		BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */; };
+		BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */; };
 		BFC0FCE6163653F300ACDE77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE5163653F300ACDE77 /* UIKit.framework */; };
 		BFC0FCE8163653F300ACDE77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE7163653F300ACDE77 /* Foundation.framework */; };
 		BFC0FCEA163653F300ACDE77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE9163653F300ACDE77 /* CoreGraphics.framework */; };
@@ -34,6 +41,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA5AC41163676A100D33AA1 /* OpeningOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningOptions.h; sourceTree = "<group>"; };
+		BFA5AC42163676A100D33AA1 /* OpeningOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningOptions.m; sourceTree = "<group>"; };
+		BFA5AC43163676A100D33AA1 /* OpeningOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpeningOptions.xib; sourceTree = "<group>"; };
+		BFA5AC791636871000D33AA1 /* KingdomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomList.h; sourceTree = "<group>"; };
+		BFA5AC7A1636871000D33AA1 /* KingdomList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomList.m; sourceTree = "<group>"; };
+		BFA5AC7B1636871000D33AA1 /* KingdomList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomList.xib; sourceTree = "<group>"; };
+		BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KingdomEventsViewController_Image_1.png; sourceTree = "<group>"; };
+		BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomCustomCell.h; sourceTree = "<group>"; };
+		BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomCustomCell.m; sourceTree = "<group>"; };
+		BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomCustomCell.xib; sourceTree = "<group>"; };
 		BFC0FCE1163653F300ACDE77 /* NEWevent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEWevent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC0FCE5163653F300ACDE77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BFC0FCE7163653F300ACDE77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +160,15 @@
 				BFC0FD5316366AA100ACDE77 /* kingdomChoiceLoad.h */,
 				BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */,
 				BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */,
+				BFA5AC41163676A100D33AA1 /* OpeningOptions.h */,
+				BFA5AC42163676A100D33AA1 /* OpeningOptions.m */,
+				BFA5AC43163676A100D33AA1 /* OpeningOptions.xib */,
+				BFA5AC791636871000D33AA1 /* KingdomList.h */,
+				BFA5AC7A1636871000D33AA1 /* KingdomList.m */,
+				BFA5AC7B1636871000D33AA1 /* KingdomList.xib */,
+				BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */,
+				BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */,
+				BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */,
 			);
 			path = NEWevent;
 			sourceTree = "<group>";
@@ -199,6 +225,7 @@
 		BFC0FD5816366BC100ACDE77 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */,
 				BFC0FD07163653F300ACDE77 /* second.png */,
 				BFC0FD09163653F300ACDE77 /* second@2x.png */,
 				BFC0FD161636548000ACDE77 /* SCA-LRG-Image.png */,
@@ -271,6 +298,10 @@
 				BFC0FD10163653F400ACDE77 /* SecondViewController.xib in Resources */,
 				BFC0FD171636548000ACDE77 /* SCA-LRG-Image.png in Resources */,
 				BFC0FD5716366AA100ACDE77 /* kingdomChoiceLoad.xib in Resources */,
+				BFA5AC45163676A100D33AA1 /* OpeningOptions.xib in Resources */,
+				BFA5AC7D1636871000D33AA1 /* KingdomList.xib in Resources */,
+				BFA5AC7F16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png in Resources */,
+				BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +321,9 @@
 				BFC0FD381636640700ACDE77 /* normEventLVL.m in Sources */,
 				BFC0FD3B163664B300ACDE77 /* kingEventLVL.m in Sources */,
 				BFC0FD5616366AA100ACDE77 /* kingdomChoiceLoad.m in Sources */,
+				BFA5AC44163676A100D33AA1 /* OpeningOptions.m in Sources */,
+				BFA5AC7C1636871000D33AA1 /* KingdomList.m in Sources */,
+				BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
