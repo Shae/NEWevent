@@ -8,6 +8,8 @@
 
 #import "KingdomList.h"
 #import "KingdomCustomCell.h"
+#import "AppDelegate.h"
+#import "OpeningOptions.h"
 
 @interface KingdomList ()
 
@@ -20,6 +22,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+     //     imageView1.image = [UIImage imageNamed:@"SCA-WaterMark.png"];
     }
     return self;
 }
@@ -39,7 +42,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return [kingdomArray count];
 }
 
 
@@ -53,31 +56,58 @@
     if (cell == nil)
     {
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"KingdomCustomCell" owner:nil options:nil];
-        
         for(UIView *view in views)
         {
-            
             if([view isKindOfClass:[KingdomCustomCell class]])
             {
                 cell = (KingdomCustomCell*) view;
                 
-                NSDictionary *myItem = [kingdomArray objectAtIndex:indexPath.row];
-      /*          NSString *date = [myItem objectForKey:@"start"];
-
-                NSArray* foo = [date componentsSeparatedByString: @"T"];
-                NSArray* bar = [[foo objectAtIndex: 0] componentsSeparatedByString:@"-"];
-                NSString* cutDate = [[NSString alloc] initWithFormat:@"%@-%@-%@", [bar objectAtIndex: 1],[bar objectAtIndex: 2], [bar objectAtIndex: 0]];
-                
-                cell.mainLabel.text = [myItem objectForKey:@"summary"];
-                cell.subLabel.text = cutDate;*/
-                
+                // Setting Cell eventLabel to kingdomArray index
+                cell.eventLabel.text = [kingdomArray objectAtIndex:indexPath.row];
             }
-            
         }
-        
     }
-    
     return cell;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    selection = [kingdomArray objectAtIndex:indexPath.row];
+    
+   if (appDelegate.defaultKingdom == nil)
+    {
+        
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save Kingdom Choice?" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Save to Settings", @"Not Now", nil];
+        actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
+        [actionSheet showInView:self.view];
+    }else{
+            NSLog(@"%@", selection);
+    }
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"clickedButtonAtIndex");    
+    if  (buttonIndex == 0)
+    {
+        NSLog(@" Index 0");
+        //Enter code here to set kingdom default choice.
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        appDelegate.defaultKingdom = selection;
+        OpeningOptions *home = [[OpeningOptions alloc] initWithNibName:@"OpeningOptions" bundle:nil];
+        [home setModalTransitionStyle: UIModalTransitionStyleCrossDissolve];
+        [self presentViewController:home animated:YES completion:nil];
+    }
+    if (buttonIndex == 1)
+    {
+        NSLog(@" Index 1");
+        //Enter Code here for Screen swap with kingdom index selection.
+        
+    }
+    if (buttonIndex == 2)
+    {
+        NSLog(@" Default kingdom save, Canceled");
+    }
+}
 @end

@@ -11,7 +11,7 @@
 		BFA5AC45163676A100D33AA1 /* OpeningOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC43163676A100D33AA1 /* OpeningOptions.xib */; };
 		BFA5AC7C1636871000D33AA1 /* KingdomList.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC7A1636871000D33AA1 /* KingdomList.m */; };
 		BFA5AC7D1636871000D33AA1 /* KingdomList.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7B1636871000D33AA1 /* KingdomList.xib */; };
-		BFA5AC7F16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */; };
+		BFA5AC7F16368B0300D33AA1 /* SCA-WaterMark.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7E16368B0300D33AA1 /* SCA-WaterMark.png */; };
 		BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */; };
 		BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */; };
 		BFC0FCE6163653F300ACDE77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE5163653F300ACDE77 /* UIKit.framework */; };
@@ -47,7 +47,7 @@
 		BFA5AC791636871000D33AA1 /* KingdomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomList.h; sourceTree = "<group>"; };
 		BFA5AC7A1636871000D33AA1 /* KingdomList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomList.m; sourceTree = "<group>"; };
 		BFA5AC7B1636871000D33AA1 /* KingdomList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomList.xib; sourceTree = "<group>"; };
-		BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KingdomEventsViewController_Image_1.png; sourceTree = "<group>"; };
+		BFA5AC7E16368B0300D33AA1 /* SCA-WaterMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SCA-WaterMark.png"; sourceTree = "<group>"; };
 		BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomCustomCell.h; sourceTree = "<group>"; };
 		BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomCustomCell.m; sourceTree = "<group>"; };
 		BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomCustomCell.xib; sourceTree = "<group>"; };
@@ -115,6 +115,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA5AC851636913B00D33AA1 /* Old Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0FCFD163653F300ACDE77 /* FirstViewController.h */,
+				BFC0FCFE163653F300ACDE77 /* FirstViewController.m */,
+				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
+				BFC0FD04163653F300ACDE77 /* SecondViewController.h */,
+				BFC0FD05163653F300ACDE77 /* SecondViewController.m */,
+				BFC0FD0E163653F400ACDE77 /* SecondViewController.xib */,
+			);
+			name = "Old Views";
+			sourceTree = "<group>";
+		};
 		BFC0FCD6163653F300ACDE77 = {
 			isa = PBXGroup;
 			children = (
@@ -145,30 +158,25 @@
 		BFC0FCEB163653F300ACDE77 /* NEWevent */ = {
 			isa = PBXGroup;
 			children = (
-				BFC0FD5816366BC100ACDE77 /* Images */,
-				BFC0FD3D1636664B00ACDE77 /* SBJSON */,
-				BFC0FD3C1636650400ACDE77 /* classes */,
 				BFC0FCF4163653F300ACDE77 /* AppDelegate.h */,
 				BFC0FCF5163653F300ACDE77 /* AppDelegate.m */,
-				BFC0FCFD163653F300ACDE77 /* FirstViewController.h */,
-				BFC0FCFE163653F300ACDE77 /* FirstViewController.m */,
-				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
-				BFC0FD04163653F300ACDE77 /* SecondViewController.h */,
-				BFC0FD05163653F300ACDE77 /* SecondViewController.m */,
-				BFC0FD0E163653F400ACDE77 /* SecondViewController.xib */,
-				BFC0FCEC163653F300ACDE77 /* Supporting Files */,
-				BFC0FD5316366AA100ACDE77 /* kingdomChoiceLoad.h */,
-				BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */,
-				BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */,
 				BFA5AC41163676A100D33AA1 /* OpeningOptions.h */,
 				BFA5AC42163676A100D33AA1 /* OpeningOptions.m */,
 				BFA5AC43163676A100D33AA1 /* OpeningOptions.xib */,
+				BFC0FD5316366AA100ACDE77 /* kingdomChoiceLoad.h */,
+				BFC0FD5416366AA100ACDE77 /* kingdomChoiceLoad.m */,
+				BFC0FD5516366AA100ACDE77 /* kingdomChoiceLoad.xib */,
 				BFA5AC791636871000D33AA1 /* KingdomList.h */,
 				BFA5AC7A1636871000D33AA1 /* KingdomList.m */,
 				BFA5AC7B1636871000D33AA1 /* KingdomList.xib */,
 				BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */,
 				BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */,
 				BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */,
+				BFA5AC851636913B00D33AA1 /* Old Views */,
+				BFC0FD3D1636664B00ACDE77 /* SBJSON */,
+				BFC0FD5816366BC100ACDE77 /* Images */,
+				BFC0FCEC163653F300ACDE77 /* Supporting Files */,
+				BFC0FD3C1636650400ACDE77 /* classes */,
 			);
 			path = NEWevent;
 			sourceTree = "<group>";
@@ -225,7 +233,7 @@
 		BFC0FD5816366BC100ACDE77 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BFA5AC7E16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png */,
+				BFA5AC7E16368B0300D33AA1 /* SCA-WaterMark.png */,
 				BFC0FD07163653F300ACDE77 /* second.png */,
 				BFC0FD09163653F300ACDE77 /* second@2x.png */,
 				BFC0FD161636548000ACDE77 /* SCA-LRG-Image.png */,
@@ -300,7 +308,7 @@
 				BFC0FD5716366AA100ACDE77 /* kingdomChoiceLoad.xib in Resources */,
 				BFA5AC45163676A100D33AA1 /* OpeningOptions.xib in Resources */,
 				BFA5AC7D1636871000D33AA1 /* KingdomList.xib in Resources */,
-				BFA5AC7F16368B0300D33AA1 /* KingdomEventsViewController_Image_1.png in Resources */,
+				BFA5AC7F16368B0300D33AA1 /* SCA-WaterMark.png in Resources */,
 				BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KingdomList : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface KingdomList : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 {
     NSArray* kingdomArray;
+    NSString *selection;
+
 }
 
 @end

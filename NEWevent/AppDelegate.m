@@ -16,12 +16,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //defaultKingdom = @"test";
+    ////// Retrieving Saved Settings ////////
+    
+    //Kingdom
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    defaultKingdom = [prefs stringForKey:@"kingdomSAVE"];
+    
+     // Trying to retrieve an NSMutable array that was saved using NSKeyedArchiver
+    NSData *dataRepresentingSavedArray = [prefs objectForKey:@"favEventsSAVE"];
+    if (dataRepresentingSavedArray != nil)
+    {
+        NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
+        if (oldSavedArray != nil)
+            favEvents = [[NSMutableArray alloc] initWithArray:oldSavedArray];
+        else
+            favEvents = [[NSMutableArray alloc] init];
+    }
+    
+    //Ask to save kingdom again
+    askAgain = [prefs stringForKey:@"askAgainSAVE"];
+    
+    ////////////////////////////////////////////////////
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[OpeningOptions alloc] initWithNibName:@"OpeningOptions" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
     
    /*
     // Override point for customization after application launch.
@@ -40,6 +62,7 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -62,7 +85,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    ////////////  SAVE Settings  ////////////////////////
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:defaultKingdom forKey:@"kingdomSAVE"];
+    [prefs setObject:askAgain forKey:@"askAgainSAVE"];
+    
+    
+    // Trying to save an NSMutable array as a data object using NSKeyedArchiver
+    if (favEvents != nil)
+    {
+        NSData *newSavedArray = [NSKeyedArchiver archivedDataWithRootObject:favEvents];
+        [prefs setObject:newSavedArray forKey:@"favEventsSAVE"];
+    }
+    
+    
+
+
+    ///////////////////////////////////////////////////////////
 }
+
+/*+(void)setDefaultKingdom:(NSString *)newDefaultKingdom
+{
+    NSString *testIT = newDefaultKingdom;
+    defaultKingdom = testIT;
+}*/
+
 
 /*
 // Optional UITabBarControllerDelegate method.

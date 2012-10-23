@@ -11,9 +11,14 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 {
     __weak NSString *defaultKingdom;
+    NSMutableArray *favEvents;
+    NSString *askAgain;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIViewController *viewController;
 @property (strong, nonatomic) UITabBarController *tabBarController;
 @property (weak, nonatomic) NSString *defaultKingdom;
+
+//+(void)setDefaultKingdom:(NSString *)newDefaultKingdom;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "kingdomChoiceLoad.h"
+#import "AppDelegate.h"
 
 @interface kingdomChoiceLoad ()
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    areaName.text = appDelegate.defaultKingdom;
 }
 
 - (void)didReceiveMemoryWarning

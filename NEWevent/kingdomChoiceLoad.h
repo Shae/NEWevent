@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface kingdomChoiceLoad : UIViewController
-
+{
+    
+    __weak IBOutlet UILabel *areaName;
+}
 @end

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KingdomCustomCell : UITableViewCell
-
+{
+    
+    __weak IBOutlet UILabel *eventLabel;
+}
+@property (weak, nonatomic) IBOutlet UILabel *eventLabel;
 @end

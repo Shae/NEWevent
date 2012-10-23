@@ -9,6 +9,7 @@
 #import "KingdomCustomCell.h"
 
 @implementation KingdomCustomCell
+@synthesize eventLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
