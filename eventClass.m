@@ -7,6 +7,8 @@
 //
 
 #import "eventClass.h"
+#import "normEventLVL.h"
+#import "kingEventLVL.h"
 
 @implementation eventClass
 
@@ -93,5 +95,19 @@
 -(void)setFavFALSE:(BOOL)newSetting
 {
     fav = 0;
+}
+
++(eventClass*)buildEvent : (NSInteger)eventEnum
+{
+    if(eventEnum == 0){
+        NSLog(@"Please enter a valid eventEnum code 1 or 2.");
+        return nil;
+    }else if(eventEnum == 1){
+        return [[normEventLVL alloc]init];
+    }else if(eventEnum == 2){
+        return [[kingEventLVL alloc]init];
+    }
+    
+    return nil;
 }
 @end

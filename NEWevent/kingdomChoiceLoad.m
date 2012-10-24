@@ -9,6 +9,7 @@
 #import "kingdomChoiceLoad.h"
 #import "AppDelegate.h"
 #import "SBJSON.h"
+#import "FirstViewController.h"
 
 @interface kingdomChoiceLoad ()
 
@@ -65,6 +66,9 @@
     // Run method from app delegate for JSON pull.
     [appDelegate buildEventData];
     [spinner stopAnimating];
+    FirstViewController *eventListView = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    [eventListView setModalTransitionStyle: UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:eventListView animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

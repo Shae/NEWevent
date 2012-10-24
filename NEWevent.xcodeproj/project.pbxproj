@@ -131,9 +131,6 @@
 		BFA5AC851636913B00D33AA1 /* Old Views */ = {
 			isa = PBXGroup;
 			children = (
-				BFC0FCFD163653F300ACDE77 /* FirstViewController.h */,
-				BFC0FCFE163653F300ACDE77 /* FirstViewController.m */,
-				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
 				BFC0FD04163653F300ACDE77 /* SecondViewController.h */,
 				BFC0FD05163653F300ACDE77 /* SecondViewController.m */,
 				BFC0FD0E163653F400ACDE77 /* SecondViewController.xib */,
@@ -185,6 +182,9 @@
 				BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */,
 				BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */,
 				BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */,
+				BFC0FCFD163653F300ACDE77 /* FirstViewController.h */,
+				BFC0FCFE163653F300ACDE77 /* FirstViewController.m */,
+				BFC0FD0B163653F400ACDE77 /* FirstViewController.xib */,
 				BFA5AC8D163737AF00D33AA1 /* EventCell.h */,
 				BFA5AC8E163737B000D33AA1 /* EventCell.m */,
 				BFA5AC90163737C900D33AA1 /* EventCell.xib */,

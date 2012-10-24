@@ -24,6 +24,8 @@
     NSInteger numItems;
     NSMutableArray *stuff;
     NSDictionary *eventObject;
+    //an array of event objects built from the factory
+    __strong NSMutableArray *eventClassObjArray;
 
 }
 @property (strong, nonatomic) UIWindow *window;
@@ -31,6 +33,7 @@
 @property (strong, nonatomic) UITabBarController *tabBarController;
 @property (weak, nonatomic) NSString *defaultKingdom;
 @property (strong, nonatomic) NSMutableArray *eventArray;
+@property (strong, nonatomic) NSMutableArray *eventClassObjArray;
 @property (nonatomic) BOOL autoUpdate;
 
 

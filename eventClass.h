@@ -48,4 +48,5 @@ typedef enum
 -(void)setFavTRUE:(BOOL)newSetting;
 -(void)setFavFALSE:(BOOL)newSetting;
 
++(eventClass*)buildEvent : (NSInteger)eventEnum;
 @end

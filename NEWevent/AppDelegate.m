@@ -11,9 +11,12 @@
 #import "SecondViewController.h"
 #import "OpeningOptions.h"
 #import "SBJSON.h"
+#import "normEventLVL.h"
+#import "kingEventLVL.h"
+#import "eventClass.h"
 
 @implementation AppDelegate
-@synthesize defaultKingdom, eventArray, autoUpdate;
+@synthesize defaultKingdom, eventArray, autoUpdate, eventClassObjArray;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -154,20 +157,30 @@
     //NSLog(@"%@", eventObject); //works
     NSLog(@"%i", numItems); //works
     eventArray = [[NSMutableArray alloc] init];
-    
+    eventClassObjArray = [[NSMutableArray alloc] init];
     
     for (id key in eventObject)
     {
         
         NSString *currentKey = key;
         NSDictionary *currentObj = [eventObject objectForKey:currentKey];
-        
         [eventArray addObject:currentObj];
+        NSLog(@"%@", currentObj);
+        //NSLog(@"%@", [currentObj objectForKey:@"summary"]);
         
-        NSLog(@"%@", [currentObj objectForKey:@"summary"]);
-        
-    }
+        ////////    FACTORY CALL    /////////////////
+        normEventLVL *newEvent = (normEventLVL*) [eventClass buildEvent:1];
+        [newEvent setEventName: [currentObj objectForKey:@"summary"]];
+        [newEvent setEventCode: [currentObj objectForKey:@"uid"]];
+        [newEvent setEventDescription: [currentObj objectForKey:@"description"]];
+        [newEvent setEventURL: [currentObj objectForKey:@"url"]];
+        [newEvent setStartDate: [currentObj objectForKey:@"start"]];
+        [newEvent setEndDate: [currentObj objectForKey:@"end"]];
+        [newEvent setHost: [currentObj objectForKey:@"location"]];
 
+        [eventClassObjArray addObject:newEvent];
+    }
+    NSLog(@"%i", [eventClassObjArray count]);
 }
  
 @end

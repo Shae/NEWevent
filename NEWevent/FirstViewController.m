@@ -95,9 +95,17 @@
     
     if (cell != nil)
     {
-         NSDictionary *myItem = [appDelegate.eventArray objectAtIndex:indexPath.row];
+         NSDictionary *myItem = [appDelegate.eventClassObjArray objectAtIndex:indexPath.row];
                 // Setting Cell eventLabel to kingdomArray index
-                cell.mainLabel.text = [ myItem objectForKey:@"summary"];
+        /*NSString *eventName;  //summary
+        NSString *eventCode;   //uid
+        NSDate *eventStartDate; //start
+        NSString *description;  //description
+        NSDate *eventEndDate; //end
+        NSString *eventURL; //url
+        NSString *hostingBarony; //location
+        BOOL fav;*/
+                cell.mainLabel.text = [ myItem objectForKey:@"eventName"];
         NSLog(@"%@", [myItem objectForKey:@"summary"]);
     }
     return cell;
