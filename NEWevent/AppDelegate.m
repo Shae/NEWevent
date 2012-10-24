@@ -10,9 +10,10 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "OpeningOptions.h"
+#import "SBJSON.h"
 
 @implementation AppDelegate
-@synthesize defaultKingdom;
+@synthesize defaultKingdom, eventArray, autoUpdate;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -21,6 +22,7 @@
     //Kingdom
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     defaultKingdom = [prefs stringForKey:@"kingdomSAVE"];
+    autoUpdate = [prefs boolForKey:@"autoUpdateSAVE"];
     
      // Trying to retrieve an NSMutable array that was saved using NSKeyedArchiver
     NSData *dataRepresentingSavedArray = [prefs objectForKey:@"favEventsSAVE"];
@@ -90,6 +92,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setObject:defaultKingdom forKey:@"kingdomSAVE"];
     [prefs setObject:askAgain forKey:@"askAgainSAVE"];
+    [prefs setBool: 1 /*autoUpdate*/ forKey:@"autoUpdateSAVE"];
     
     
     // Trying to save an NSMutable array as a data object using NSKeyedArchiver
@@ -105,11 +108,6 @@
     ///////////////////////////////////////////////////////////
 }
 
-/*+(void)setDefaultKingdom:(NSString *)newDefaultKingdom
-{
-    NSString *testIT = newDefaultKingdom;
-    defaultKingdom = testIT;
-}*/
 
 
 /*
@@ -126,4 +124,50 @@
 }
 */
 
+-(void)buildEventData
+{
+ 
+    numItems = 0;
+    stuff = [[NSMutableArray alloc] init];
+    
+    url = [[NSURL alloc] initWithString:@"http://scalac.herokuapp.com/index"];
+    request = [[NSURLRequest alloc] initWithURL:url];
+    
+    if (request != nil)
+    {
+        connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        requestedData = [NSMutableData data];
+        
+        //NSLog(@"%@", requestData);
+        
+    }
+    NSString *jsonString = [NSString stringWithContentsOfURL:url encoding:NSStringEncodingConversionAllowLossy error:nil];
+    
+    // Create SBJSON object to parse JSON
+    SBJSON *parser = [[SBJSON alloc] init];
+    
+    // parse the JSON string into an object - assuming json_string is a NSString of JSON data
+    eventObject = [[NSDictionary alloc] init];
+    eventObject = [parser objectWithString:jsonString error:nil];
+    
+    numItems = [eventObject count];
+    //NSLog(@"%@", eventObject); //works
+    NSLog(@"%i", numItems); //works
+    eventArray = [[NSMutableArray alloc] init];
+    
+    
+    for (id key in eventObject)
+    {
+        
+        NSString *currentKey = key;
+        NSDictionary *currentObj = [eventObject objectForKey:currentKey];
+        
+        [eventArray addObject:currentObj];
+        
+        NSLog(@"%@", [currentObj objectForKey:@"summary"]);
+        
+    }
+
+}
+ 
 @end

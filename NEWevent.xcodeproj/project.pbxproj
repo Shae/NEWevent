@@ -14,6 +14,15 @@
 		BFA5AC7F16368B0300D33AA1 /* SCA-WaterMark.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC7E16368B0300D33AA1 /* SCA-WaterMark.png */; };
 		BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */; };
 		BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */; };
+		BFA5AC8716372AB100D33AA1 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC8616372AB100D33AA1 /* data.plist */; };
+		BFA5AC8F163737B000D33AA1 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5AC8E163737B000D33AA1 /* EventCell.m */; };
+		BFA5AC91163737CA00D33AA1 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5AC90163737C900D33AA1 /* EventCell.xib */; };
+		BFA5AC97163765EC00D33AA1 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD401636666500ACDE77 /* NSObject+SBJSON.m */; };
+		BFA5AC98163765EC00D33AA1 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD421636666500ACDE77 /* NSString+SBJSON.m */; };
+		BFA5AC99163765EC00D33AA1 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD441636666500ACDE77 /* SBJSON.m */; };
+		BFA5AC9A163765EC00D33AA1 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD461636666500ACDE77 /* SBJsonBase.m */; };
+		BFA5AC9B163765EC00D33AA1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD481636666500ACDE77 /* SBJsonParser.m */; };
+		BFA5AC9C163765EC00D33AA1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD4A1636666500ACDE77 /* SBJsonWriter.m */; };
 		BFC0FCE6163653F300ACDE77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE5163653F300ACDE77 /* UIKit.framework */; };
 		BFC0FCE8163653F300ACDE77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE7163653F300ACDE77 /* Foundation.framework */; };
 		BFC0FCEA163653F300ACDE77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE9163653F300ACDE77 /* CoreGraphics.framework */; };
@@ -51,6 +60,10 @@
 		BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomCustomCell.h; sourceTree = "<group>"; };
 		BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomCustomCell.m; sourceTree = "<group>"; };
 		BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomCustomCell.xib; sourceTree = "<group>"; };
+		BFA5AC8616372AB100D33AA1 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = data.plist; path = ../data.plist; sourceTree = "<group>"; };
+		BFA5AC8D163737AF00D33AA1 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCell.h; path = ../EventCell.h; sourceTree = "<group>"; };
+		BFA5AC8E163737B000D33AA1 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCell.m; path = ../EventCell.m; sourceTree = "<group>"; };
+		BFA5AC90163737C900D33AA1 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCell.xib; path = ../EventCell.xib; sourceTree = "<group>"; };
 		BFC0FCE1163653F300ACDE77 /* NEWevent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEWevent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC0FCE5163653F300ACDE77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BFC0FCE7163653F300ACDE77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +185,10 @@
 				BFA5AC8016368E8700D33AA1 /* KingdomCustomCell.h */,
 				BFA5AC8116368E8700D33AA1 /* KingdomCustomCell.m */,
 				BFA5AC8316368EA200D33AA1 /* KingdomCustomCell.xib */,
+				BFA5AC8D163737AF00D33AA1 /* EventCell.h */,
+				BFA5AC8E163737B000D33AA1 /* EventCell.m */,
+				BFA5AC90163737C900D33AA1 /* EventCell.xib */,
+				BFA5AC8616372AB100D33AA1 /* data.plist */,
 				BFA5AC851636913B00D33AA1 /* Old Views */,
 				BFC0FD3D1636664B00ACDE77 /* SBJSON */,
 				BFC0FD5816366BC100ACDE77 /* Images */,
@@ -310,6 +327,8 @@
 				BFA5AC7D1636871000D33AA1 /* KingdomList.xib in Resources */,
 				BFA5AC7F16368B0300D33AA1 /* SCA-WaterMark.png in Resources */,
 				BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */,
+				BFA5AC8716372AB100D33AA1 /* data.plist in Resources */,
+				BFA5AC91163737CA00D33AA1 /* EventCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA5AC97163765EC00D33AA1 /* NSObject+SBJSON.m in Sources */,
+				BFA5AC98163765EC00D33AA1 /* NSString+SBJSON.m in Sources */,
+				BFA5AC99163765EC00D33AA1 /* SBJSON.m in Sources */,
+				BFA5AC9A163765EC00D33AA1 /* SBJsonBase.m in Sources */,
+				BFA5AC9B163765EC00D33AA1 /* SBJsonParser.m in Sources */,
+				BFA5AC9C163765EC00D33AA1 /* SBJsonWriter.m in Sources */,
 				BFC0FCF2163653F300ACDE77 /* main.m in Sources */,
 				BFC0FCF6163653F300ACDE77 /* AppDelegate.m in Sources */,
 				BFC0FCFF163653F300ACDE77 /* FirstViewController.m in Sources */,
@@ -332,6 +357,7 @@
 				BFA5AC44163676A100D33AA1 /* OpeningOptions.m in Sources */,
 				BFA5AC7C1636871000D33AA1 /* KingdomList.m in Sources */,
 				BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */,
+				BFA5AC8F163737B000D33AA1 /* EventCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

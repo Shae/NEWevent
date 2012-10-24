@@ -10,6 +10,7 @@
 #import "KingdomCustomCell.h"
 #import "AppDelegate.h"
 #import "OpeningOptions.h"
+#import "kingdomChoiceLoad.h"
 
 @interface KingdomList ()
 
@@ -95,7 +96,7 @@
         //Enter code here to set kingdom default choice.
             AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         appDelegate.defaultKingdom = selection;
-        OpeningOptions *home = [[OpeningOptions alloc] initWithNibName:@"OpeningOptions" bundle:nil];
+        kingdomChoiceLoad *home = [[kingdomChoiceLoad alloc] initWithNibName:@"kingdomChoiceLoad" bundle:nil];
         [home setModalTransitionStyle: UIModalTransitionStyleCrossDissolve];
         [self presentViewController:home animated:YES completion:nil];
     }

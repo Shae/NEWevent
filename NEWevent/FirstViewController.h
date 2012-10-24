@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+{
+    NSMutableDictionary *data;
+    NSString *path;
+    
+    __weak IBOutlet UITableView *eventTableView;
+}
 
 
 @end

@@ -12,5 +12,7 @@
 {
     
     __weak IBOutlet UILabel *areaName;
+    UIActivityIndicatorView *spinner;
 }
+
 @end
