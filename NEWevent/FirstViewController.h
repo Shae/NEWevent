@@ -16,5 +16,7 @@
     __weak IBOutlet UITableView *eventTableView;
 }
 
+-(NSString*)dateConvert: (NSString*)dateIn;
+-(NSString*)dayConvert: (NSString*)dateIn;
 
 @end

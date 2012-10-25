@@ -1,15 +1,14 @@
 //
-//  EventCell.m
+//  eventCustomCell.m
 //  NEWevent
 //
 //  Created by Shae Klusman on 10/23/12.
 //  Copyright (c) 2012 Shae Klusman. All rights reserved.
 //
 
-#import "EventCell.h"
+#import "eventCustomCell.h"
 
-@implementation EventCell
-@synthesize mainLabel, subLabel, startDate, endDate;
+@implementation eventCustomCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -23,6 +23,8 @@
 		BFA5AC9A163765EC00D33AA1 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD461636666500ACDE77 /* SBJsonBase.m */; };
 		BFA5AC9B163765EC00D33AA1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD481636666500ACDE77 /* SBJsonParser.m */; };
 		BFA5AC9C163765EC00D33AA1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC0FD4A1636666500ACDE77 /* SBJsonWriter.m */; };
+		BFA5ACBE1638907200D33AA1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5ACBC1638907100D33AA1 /* SettingsViewController.m */; };
+		BFA5ACBF1638907200D33AA1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA5ACBD1638907100D33AA1 /* SettingsViewController.xib */; };
 		BFC0FCE6163653F300ACDE77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE5163653F300ACDE77 /* UIKit.framework */; };
 		BFC0FCE8163653F300ACDE77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE7163653F300ACDE77 /* Foundation.framework */; };
 		BFC0FCEA163653F300ACDE77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC0FCE9163653F300ACDE77 /* CoreGraphics.framework */; };
@@ -64,6 +66,9 @@
 		BFA5AC8D163737AF00D33AA1 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCell.h; path = ../EventCell.h; sourceTree = "<group>"; };
 		BFA5AC8E163737B000D33AA1 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCell.m; path = ../EventCell.m; sourceTree = "<group>"; };
 		BFA5AC90163737C900D33AA1 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCell.xib; path = ../EventCell.xib; sourceTree = "<group>"; };
+		BFA5ACBB1638907000D33AA1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BFA5ACBC1638907100D33AA1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BFA5ACBD1638907100D33AA1 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		BFC0FCE1163653F300ACDE77 /* NEWevent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEWevent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC0FCE5163653F300ACDE77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BFC0FCE7163653F300ACDE77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,6 +193,9 @@
 				BFA5AC8D163737AF00D33AA1 /* EventCell.h */,
 				BFA5AC8E163737B000D33AA1 /* EventCell.m */,
 				BFA5AC90163737C900D33AA1 /* EventCell.xib */,
+				BFA5ACBB1638907000D33AA1 /* SettingsViewController.h */,
+				BFA5ACBC1638907100D33AA1 /* SettingsViewController.m */,
+				BFA5ACBD1638907100D33AA1 /* SettingsViewController.xib */,
 				BFA5AC8616372AB100D33AA1 /* data.plist */,
 				BFA5AC851636913B00D33AA1 /* Old Views */,
 				BFC0FD3D1636664B00ACDE77 /* SBJSON */,
@@ -329,6 +337,7 @@
 				BFA5AC8416368EA200D33AA1 /* KingdomCustomCell.xib in Resources */,
 				BFA5AC8716372AB100D33AA1 /* data.plist in Resources */,
 				BFA5AC91163737CA00D33AA1 /* EventCell.xib in Resources */,
+				BFA5ACBF1638907200D33AA1 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +367,7 @@
 				BFA5AC7C1636871000D33AA1 /* KingdomList.m in Sources */,
 				BFA5AC8216368E8700D33AA1 /* KingdomCustomCell.m in Sources */,
 				BFA5AC8F163737B000D33AA1 /* EventCell.m in Sources */,
+				BFA5ACBE1638907200D33AA1 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

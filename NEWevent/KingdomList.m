@@ -104,7 +104,6 @@
     {
         NSLog(@" Index 1");
         //Enter Code here for Screen swap with kingdom index selection.
-        
     }
     if (buttonIndex == 2)
     {

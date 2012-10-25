@@ -42,6 +42,7 @@
     askAgain = [prefs stringForKey:@"askAgainSAVE"];
     
     ////////////////////////////////////////////////////
+    eventClassObjArray = [[NSMutableArray alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -52,10 +53,11 @@
     
    /*
     // Override point for customization after application launch.
+    UIViewController *viewController0 = [[OpeningOptions alloc] initWithNibName:@"OpeningOptions" bundle:nil];
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController0, viewController1, viewController2];
    //viewController0.hidesBottomBarWhenPushed = YES;
     self.window.rootViewController = self.tabBarController;
     
@@ -95,8 +97,9 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setObject:defaultKingdom forKey:@"kingdomSAVE"];
     [prefs setObject:askAgain forKey:@"askAgainSAVE"];
+
     [prefs setBool: 1 /*autoUpdate*/ forKey:@"autoUpdateSAVE"];
-    
+    eventClassObjArray = nil;
     
     // Trying to save an NSMutable array as a data object using NSKeyedArchiver
     if (favEvents != nil)
@@ -140,10 +143,9 @@
     {
         connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
         requestedData = [NSMutableData data];
-        
         //NSLog(@"%@", requestData);
-        
     }
+    
     NSString *jsonString = [NSString stringWithContentsOfURL:url encoding:NSStringEncodingConversionAllowLossy error:nil];
     
     // Create SBJSON object to parse JSON
@@ -157,7 +159,8 @@
     //NSLog(@"%@", eventObject); //works
     NSLog(@"%i", numItems); //works
     eventArray = [[NSMutableArray alloc] init];
-    eventClassObjArray = [[NSMutableArray alloc] init];
+
+    
     
     for (id key in eventObject)
     {
@@ -165,7 +168,7 @@
         NSString *currentKey = key;
         NSDictionary *currentObj = [eventObject objectForKey:currentKey];
         [eventArray addObject:currentObj];
-        NSLog(@"%@", currentObj);
+        //NSLog(@"%@", currentObj);
         //NSLog(@"%@", [currentObj objectForKey:@"summary"]);
         
         ////////    FACTORY CALL    /////////////////
@@ -178,9 +181,12 @@
         [newEvent setEndDate: [currentObj objectForKey:@"end"]];
         [newEvent setHost: [currentObj objectForKey:@"location"]];
 
-        [eventClassObjArray addObject:newEvent];
+        ////// Remove events without names ////
+        if ([currentObj objectForKey:@"summary"] != nil) {
+            [eventClassObjArray addObject:newEvent];
+        }
     }
     NSLog(@"%i", [eventClassObjArray count]);
 }
- 
+
 @end

@@ -60,6 +60,7 @@
 -(void)setEventCode:(NSString*)newEventCode
 {
     eventCode = newEventCode;
+    //NSLog(@"%@", eventCode);
 }
 
 -(void)setEventDescription:(NSString*)newEventDescription
